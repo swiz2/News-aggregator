@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<div xmlns="http://www.w3.org/1999/html">
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<style>
+.card{
+ border-radius: 10px;
+}
+h1{
+text-align: center;
+}
+.btn btn-succes{
+    padding: 30px;
+}
+.row{
+    padding: 30px;
+}
+.card-body{
+    padding: 30px;
+}
+.wizz,li{
+    text-align: center;
+}
+</style>
+
+
+</head>
+
+</div>
+	<div class="jumbotron">
+		<h1>NEWS TODAY</h1>
+
+			{% csrf_token %}
+       <a class="btn btn-primary" href="{% url ' my-home' %}" role="button">morning news</a>
+            <a class="btn btn-primary" href="{% url 'my-Breakingnews' %}" role="button">Breaking news</a>
+            <a class="btn btn-primary" href="{% url 'my-Weeklyhighlights' %}" role="button">Weekly highlights</a>
+            <a class="btn btn-primary" href="{%url 'my-Sports'  %}" role="button">Sports</a>
+            <a class="btn btn-primary" href="{% url 'my-Newsmarket' %}" role="button">News market</a>
+            <a class="btn btn-primary" href="{% url 'my-Politics' %}" role="button">Politics</a>
+            <a class="btn btn-primary" href="{% url 'my-Internationalrelations' %}" role="button">International relations</a>
+		</form>
+	</div>
+
+</body>
+<div class="card-deck">
+  <div class="card">
+    <img class="card-img-top" src="https://ichef.bbci.co.uk/live-experience/cps/1024/cpsprodpb/24CF/production/_128932490_gettyimages-1247922393.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Spurs Are Out Of The champions league</h5>
+      <p class="card-text">Rumours have circulated around Harry Kane's future at Spurs for the past few seasons with many suggesting he'll need to go elsewhere if he wants to win a trophy.</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
+        <a href="https://www.bbc.com/sport/live/football/64876241" class="btn btn-primary">Read more</a>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="https://ichef.bbci.co.uk/onesport/cps/624/cpsprodpb/42D9/production/_128931171_gettyimages-1470561601.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Manchester United sale: Prospective buyers to attend presentations at Old Trafford</h5>
+      <p class="card-text">They include representatives of Ineos owner Sir Jim Ratcliffe and Qatar's Sheikh Jassim bin Hamad Al Thani.
+
+The pair are regarded as the two leading candidates to buy the Premier League club should the Glazer family eventually decide to relinquish control.</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
+    <a href="https://www.theonion.com/trump-biden-pence-probably-fucking-dan-quayle-at-thi-1850034534" class="btn btn-primary">Read more</a>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="https://ichef.bbci.co.uk/onesport/cps/624/cpsprodpb/6A57/production/_128832272_hamcar.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Lewis Hamilton says Mercedes 'didn't listen' to his concerns about 2023 car</h5>
+      <p class="card-text"> The seven-time champion finished fifth in the season-opening Bahrain GP as the team made another poor start
+"Last year, there were things I told them. I said the issues that are with the car," said the 38-year-old Briton</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
+    <a href="https://www.bbc.com/sport/formula1/64893927" class="btn btn-primary">Read more</a>
+    </div>
+  </div>
+
+</div>
+<div class="card-deck">
+  <div class="card">
+    <img class="card-img-top" src="https://ichef.bbci.co.uk/onesport/cps/624/cpsprodpb/44B4/production/_128888571_sinfield6nations.png" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title"> Six Nations 2023: Kevin Sinfield - the marathon man behind England's defence</h5>
+      <p class="card-text"> From the moment he joined England's coaching team in December, Kevin Sinfield wanted a defence built on friendship - and nobody understands friendship better than him.</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
+    <a href="https://www.bbc.com/sport/rugby-union/64873763" class="btn btn-primary">Read more</a>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="https://cdn.vox-cdn.com/thumbor/gwA6dDhfQCWX-ShkA_PbL57aCF8=/0x0:3323x2216/1200x675/filters:focal(1397x843:1927x1373)/cdn.vox-cdn.com/uploads/chorus_image/image/72056933/1472367989.0.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Ten Hag delighted with Man Utd fan response
+Man Utd 4-1 Real Betis</h5>
+      <p class="card-text"> "I was curious but I was pleased by the response from the crowd to the team," he said. "From minute one they were behind the team, the team gave energy by performance and they gave it back.
+
+ </p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
+    <a href="https://www.bbc.com/sport/live/football/64912074" class="btn btn-primary">Read more</a>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="https://ichef.bbci.co.uk/news/976/cpsprodpb/299A/production/_128705601_gettyimages-1235485606.jpg.webp" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Sania Mirza: India tennis icon who showed hate could be defeated</h5>
+      <p class="card-text">Her black hair tied in a quick bun, Mirza's dark eyes focused across the net on Tuesday, as she bounced the ball three times before serving, her iconic nose pin glinting with every move</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
+    <a href="" class="btn btn-primary">Read more</a>
+    </div>
+  </div>
+</div>
+	<script
+	src="http://code.jquery.com/jquery-3.3.1.min.js"
+	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+<!-- Footer -->
+<footer class="bg-light text-center ">
+  <!-- Grid container -->
+  <div class="container p-4">
+
+
+    <!-- Section: Form -->
+    <section class="">
+      <form action="">
+        <!--Grid row-->
+        <div class="row d-flex justify-content-center">
+          <!--Grid column-->
+          <div class="col-auto">
+            <p class="pt-2">
+              <strong>Sign up for our newsletter</strong>
+            </p>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-md-5 col-12">
+            <!-- Email input -->
+            <div class="form-outline mb-4">
+              <input type="email" id="form5Example2" class="form-control" />
+              <label class="form-label" for="form5Example2">Email address</label>
+            </div>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-auto">
+
+            <!-- Submit button -->
+            <button type="submit" class="btn btn-primary mb-4">
+              Subscribe
+            </button>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </form>
+    </section>
+    <!-- Section: Form -->
+
+
+    <!-- Section: Text -->
+    <section class="mb-4">
+      <p>
+        NewsToday is a reputable news company dedicated to providing timely and accurate news to its audience. With a team of experienced journalists, NewsToday covers a wide range of topics, from politics and business to entertainment and sports. Stay informed with NewsToday's up-to-date news coverage.
+      </p>
+
+    <!-- Section: Links -->
+    <section style="text-align: center " class="wizz">
+      <!--Grid row-->
+      <div style="text-align: center" class="row">
+        <!--Grid column-->
+        <div style="text-align: center" class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 style="text-align: center" class="text-uppercase"></h5>
+
+          <ul style="text-align: center" class="list-unstyled mb-0">
+            <li>
+              <a style="text-align: center, padding:30px"  href="#!" class="text-dark">contacts</a>
+            </li>
+            <li>
+              <a style="text-align: center, padding:30px" href="#!" class="text-dark">About</a>
+            </li>
+            <li>
+              <a style="text-align: center, padding:30px" href="#!" class="text-dark">Home</a>
+            </li>
+            <li>
+              <a style="text-align: center, padding:30px"href="#!" class="text-dark">Comments</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+    © 2023Copyright:
+    <a class="text-dark" href="https://mdbootstrap.com/">NewsToday.com</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+</html>
+

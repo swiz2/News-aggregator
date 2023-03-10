@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<div xmlns="http://www.w3.org/1999/html">
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<style>
+.card{
+ border-radius: 10px;
+}
+h1{
+text-align: center;
+}
+.btn btn-succes{
+    padding: 30px;
+}
+.row{
+    padding: 30px;
+}
+.card-body{
+    padding: 30px;
+}
+.wizz,li{
+    text-align: center;
+}
+</style>
+
+
+</head>
+
+</div>
+	<div class="jumbotron">
+		<h1>NEWS TODAY</h1>
+
+			{% csrf_token %}
+           <a class="btn btn-primary" href="{% url ' my-home' %}" role="button">morning news</a>
+            <a class="btn btn-primary" href="{% url 'my-Breakingnews' %}" role="button">Breaking news</a>
+            <a class="btn btn-primary" href="{% url 'my-Weeklyhighlights' %}" role="button">Weekly highlights</a>
+            <a class="btn btn-primary" href="{%url 'my-Sports'  %}" role="button">Sports</a>
+            <a class="btn btn-primary" href="{% url 'my-Newsmarket' %}" role="button">News market</a>
+            <a class="btn btn-primary" href="{% url 'my-Politics' %}" role="button">Politics</a>
+            <a class="btn btn-primary" href="{% url 'my-Internationalrelations' %}" role="button">International relations</a>
+		</form>
+	</div>
+
+</body>
+<div class="card-deck">
+  <div class="card">
+    <img class="card-img-top" src="https://i-invdn-com.investing.com/news/gold3_800x533_L_1412152987.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Gold Rises Amid SVB Nervousness and NFP Data at 13:30 GMT</h5>
+      <p class="card-text">Gold remains 1% down for the week early in the European session but has recovered a sizeable portion of lost ground on the back of Jerome Powell’s hawkish testimony in front of the US Senate Banking Committee. Powell’s mention of a faster pace of rate hikes, should the totality of the data necessitate such action, saw gold sell-off around 2.5% as expectations around a possible 50 bps hike later this month rose</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
+        <a href="https://www.dailyfx.com/news/gold-rises-amid-svb-nervousness-and-nfp-data-at-13-30-gmt-20230310.html" class="btn btn-primary">Read more</a>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="https://image.cnbcfm.com/api/v1/image/107202762-1677839435526-gettyimages-1247623523-UK_LSEG.jpeg?v=1678436077&w=630&h=354&ffmt=webp&vtcrop=y" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">UK economy rebounds with stronger-than-expected January GDP print</h5>
+      <p class="card-text">LONDON — The U.K. economy grew by 0.3% in January, official figures showed on Friday, exceeding expectations as it continues to fend off what economists see as an inevitable recession</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
+    <a href="https://www.dailyfx.com/news/gbp-usd-under-pressure-as-us-inflation-and-labor-data-comes-into-focus-20230309.html" class="btn btn-primary">Read more</a>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="https://a.c-dn.net/b/1K2NPJ/GettyImages-81896611+resized.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Euro Price Forecast: German CPI Boosts EUR/USD Ahead of NFP and the ECB’s Christine Lagarde</h5>
+      <p class="card-text">To close out the trading session from a EUR/USD perspective, the ECB’s Christine Lagarde is scheduled to speak and may look to reiterate the need to quell inflation after German data today. </p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
+    <a href="https://www.dailyfx.com/news/forex-euro-price-forecast-german-cpi-boosts-eur-usd-ahead-of-nfp-and-the-ecb-s-christine-lagarde-wv-20230310.html" class="btn btn-primary">Read more</a>
+    </div>
+  </div>
+
+</div>
+<div class="card-deck">
+  <div class="card">
+    <img class="card-img-top" src="https://image.cnbcfm.com/api/v1/image/107202762-1677839435526-gettyimages-1247623523-UK_LSEG.jpeg?v=1678436077&w=630&h=354&ffmt=webp&vtcrop=y" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">UK economy rebounds with stronger-than-expected January GDP print</h5>
+      <p class="card-text"> LONDON — The U.K. economy grew by 0.3% in January, official figures showed on Friday, exceeding expectations as it continues to fend off what economists see as an inevitable recession </p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
+    <a href="https://www.cnbc.com/2023/03/10/uk-economy-rebounds-with-stronger-than-expected-january-gdp-print.html" class="btn btn-primary">Read more</a>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="https://image.cnbcfm.com/api/v1/image/107134446-1665696837356-gettyimages-1243393730-ad_r1_05903.jpeg?v=1678397298&w=630&h=354&ffmt=webp&vtcrop=y" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Gap announces big loss, declining sales and executive shakeup</h5>
+      <p class="card-text">Here’s how the company did in its fiscal fourth quarter compared with what Wall Street was anticipating, based on a survey of analysts by Refinitiv</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
+    <a href="https://www.cnbc.com/2023/03/09/gap-gps-q4-earnings-2022.html" class="btn btn-primary">Read more</a>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="https://www.progasllc.com/wp-content/uploads/2021/10/Crude-Oil-Graphic.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Crude Oil Price Forecast: Demand Projection Fueled by Chinese Growth Outlook</h5>
+      <p class="card-text">Crude oil is looking for its 6th consecutive positive day this Tuesday which has gathered steam from positivity around the Chinese economy</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
+    <a href="https://www.dailyfx.com/news/crude-oil-price-forecast-demand-projection-fueled-by-chinese-growth-outlook-wv-20230307.html" class="btn btn-primary">Read more</a>
+    </div>
+  </div>
+</div>
+	<script
+	src="http://code.jquery.com/jquery-3.3.1.min.js"
+	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+<!-- Footer -->
+<footer class="bg-light text-center ">
+  <!-- Grid container -->
+  <div class="container p-4">
+
+
+    <!-- Section: Form -->
+    <section class="">
+      <form action="">
+        <!--Grid row-->
+        <div class="row d-flex justify-content-center">
+          <!--Grid column-->
+          <div class="col-auto">
+            <p class="pt-2">
+              <strong>Sign up for our newsletter</strong>
+            </p>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-md-5 col-12">
+            <!-- Email input -->
+            <div class="form-outline mb-4">
+              <input type="email" id="form5Example2" class="form-control" />
+              <label class="form-label" for="form5Example2">Email address</label>
+            </div>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-auto">
+
+            <!-- Submit button -->
+            <button type="submit" class="btn btn-primary mb-4">
+              Subscribe
+            </button>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </form>
+    </section>
+    <!-- Section: Form -->
+
+
+    <!-- Section: Text -->
+    <section class="mb-4">
+      <p>
+        NewsToday is a reputable news company dedicated to providing timely and accurate news to its audience. With a team of experienced journalists, NewsToday covers a wide range of topics, from politics and business to entertainment and sports. Stay informed with NewsToday's up-to-date news coverage.
+      </p>
+
+    <!-- Section: Links -->
+    <section style="text-align: center " class="wizz">
+      <!--Grid row-->
+      <div style="text-align: center" class="row">
+        <!--Grid column-->
+        <div style="text-align: center" class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 style="text-align: center" class="text-uppercase"></h5>
+
+          <ul style="text-align: center" class="list-unstyled mb-0">
+            <li>
+              <a style="text-align: center, padding:30px"  href="#!" class="text-dark">contacts</a>
+            </li>
+            <li>
+              <a style="text-align: center, padding:30px" href="#!" class="text-dark">About</a>
+            </li>
+            <li>
+              <a style="text-align: center, padding:30px" href="#!" class="text-dark">Home</a>
+            </li>
+            <li>
+              <a style="text-align: center, padding:30px"href="#!" class="text-dark">Comments</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+    © 2023Copyright:
+    <a class="text-dark" href="https://mdbootstrap.com/">NewsToday.com</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+</html>
+

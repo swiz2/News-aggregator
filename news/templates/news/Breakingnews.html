@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<div xmlns="http://www.w3.org/1999/html">
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<style>
+.card{
+ border-radius: 10px;
+}
+h1{
+text-align: center;
+}
+.btn btn-succes{
+    padding: 30px;
+}
+.row{
+    padding: 30px;
+}
+.card-body{
+    padding: 30px;
+}
+.wizz,li{
+    text-align: center;
+}
+</style>
+
+
+</head>
+
+</div>
+	<div class="jumbotron">
+		<h1>NEWS TODAY</h1>
+
+			{% csrf_token %}
+            <a class="btn btn-primary" href="{% url ' my-home' %}" role="button">morning news</a>
+            <a class="btn btn-primary" href="{% url 'my-Breakingnews' %}" role="button">Breaking news</a>
+            <a class="btn btn-primary" href="{% url 'my-Weeklyhighlights' %}" role="button">Weekly highlights</a>
+            <a class="btn btn-primary" href="{%url 'my-Sports'  %}" role="button">Sports</a>
+            <a class="btn btn-primary" href="{% url 'my-Newsmarket' %}" role="button">News market</a>
+            <a class="btn btn-primary" href="{% url 'my-Politics' %}" role="button">Politics</a>
+            <a class="btn btn-primary" href="{% url 'my-Internationalrelations' %}" role="button">International relations</a>
+		</form>
+	</div>
+
+</body>
+<div class="card-deck">
+  <div class="card">
+    <img class="card-img-top" src="https://i.kinja-img.com/gawker-media/image/upload/c_fit,f_auto,g_center,pg_1,q_60,w_1165/3576ea35351299ad0980d8fcfca0af8b.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">CDC Issues Dire Warning To Nick Cannon </h5>
+      <p class="card-text">ATLANTA—Cautioning Americans against the continuing outbreak of fatherhood among the popular television host, representatives from the Centers for Disease Control issued a dire warning Tuesday to alert the public that Nick Cannon was feeling horny.</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
+        <a href="https://www.theonion.com/cdc-issues-dire-warning-that-nick-cannon-is-feeling-hor-1850198169" class="btn btn-primary">Read more</a>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="https://i.kinja-img.com/gawker-media/image/upload/c_fit,f_auto,g_center,pg_1,q_60,w_1165/6ed5ea645598d73ba8e437b8302de99e.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Eric Trump Placed In CPAC Lost And Found</h5>
+      <p class="card-text">The recent discoveries of classified documents at the homes of President Joe Biden and former Vice President Mike Pence, coming on the heels of the FBI’s seizure of classified documents from former President Donald Trump’s residence in August 2022</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
+    <a href="https://www.theonion.com/trump-biden-pence-probably-fucking-dan-quayle-at-thi-1850034534" class="btn btn-primary">Read more</a>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="https://i.kinja-img.com/gawker-media/image/upload/c_fit,f_auto,g_center,pg_1,q_60,w_1165/97bf8d3f609a1bb0474ad464ebe8e4a9.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">New Study Finds Hightailing It Still Most Popular Way Outta Here</h5>
+      <p class="card-text">ANN ARBOR, MI—Following a comprehensive, decade-long survey conducted by human mobility researchers at the University of Michigan, a new study published Tuesday has confirmed that hightailing it continues to be the most popular way outta here. </p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
+    <a href="">Read more</a>
+    </div>
+  </div>
+
+</div>
+<div class="card-deck">
+  <div class="card">
+    <img class="card-img-top" src="https://i.kinja-img.com/gawker-media/image/upload/c_fit,f_auto,g_center,pg_1,q_60,w_1165/e1a17383a8cc897d0aebcff1cf04254c.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Gondoliers Gasp, Flop Uncontrollably After Venice Canals Drained From Drought</h5>
+      <p class="card-text"> </p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
+    <a href="https://www.theonion.com/meryl-streep-dropped-by-agent-after-failing-to-develop-1849593180" class="btn btn-primary">Read more</a>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="https://resources.stuff.co.nz/content/dam/images/4/z/3/n/c/5/image.related.StuffLandscapeThreeByTwo.1464x976.2689qw.png/1677803050887.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Japan Discovers 7,000 New Islands It Didn’t Know It Had</h5>
+      <p class="card-text">The Geospatial Information Authority of Japan recently revealed an updated map of the nation showing 7,000 new islands added to the region, an increase officials attribute to advances in surveying technology and the detail of the maps used for the count. What do you think?</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
+    <a href="" class="btn btn-primary">Read more</a>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="https://i.kinja-img.com/gawker-media/image/upload/c_fit,f_auto,g_center,pg_1,q_60,w_1165/660311a28fa1ce390cbc143097fc834b.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Eric Adams Leaps Off Empire State Building Wearing Homemade Wingsuit</h5>
+      <p class="card-text">NEW YORK—Declaring that he and he alone could save his city from the forces of evil, New York Mayor Eric Adams was spotted Friday morning leaping off the Empire State Building wearing a homemade wingsuit.</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
+    <a href="" class="btn btn-primary">Read more</a>
+    </div>
+  </div>
+</div>
+	<script
+	src="http://code.jquery.com/jquery-3.3.1.min.js"
+	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+<!-- Footer -->
+<footer class="bg-light text-center ">
+  <!-- Grid container -->
+  <div class="container p-4">
+
+<footer>
+    <!-- Section: Form -->
+    <section class="">
+      <form action="">
+        <!--Grid row-->
+        <div class="row d-flex justify-content-center">
+          <!--Grid column-->
+          <div class="col-auto">
+            <p class="pt-2">
+              <strong>Sign up for our newsletter</strong>
+            </p>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-md-5 col-12">
+            <!-- Email input -->
+            <div class="form-outline mb-4">
+              <input type="email" id="form5Example2" class="form-control" />
+              <label class="form-label" for="form5Example2">Email address</label>
+            </div>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-auto">
+
+            <!-- Submit button -->
+            <button type="submit" class="btn btn-primary mb-4">
+              Subscribe
+            </button>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </form>
+    </section>
+    <!-- Section: Form -->
+
+
+    <!-- Section: Text -->
+    <section class="mb-4">
+      <p>
+        NewsToday is a reputable news company dedicated to providing timely and accurate news to its audience. With a team of experienced journalists, NewsToday covers a wide range of topics, from politics and business to entertainment and sports. Stay informed with NewsToday's up-to-date news coverage.
+      </p>
+
+    <!-- Section: Links -->
+    <section style="text-align: center " class="wizz">
+      <!--Grid row-->
+      <div style="text-align: center" class="row">
+        <!--Grid column-->
+        <div style="text-align: center" class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 style="text-align: center" class="text-uppercase"></h5>
+
+          <ul  class="list-unstyled mb-0">
+            <li>
+              <a style=" padding:30px"  href="#!" class="text-dark">contacts</a>
+            </li>
+            <li>
+              <a style=" padding:30px" href="#!" class="text-dark">About</a>
+            </li>
+            <li>
+              <a style=" padding:30px" href="#!" class="text-dark">Home</a>
+            </li>
+            <li>
+              <a style=" padding:30px"href="#!" class="text-dark">Comments</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+    © 2023Copyright:
+    <a class="text-dark" href="https://mdbootstrap.com/">NewsToday.com</a>
+  </div>
+  <!-- Copyright -->
+</div>
+    </div>
+ </footer>
+<!-- Footer -->
+</html>
+

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<div xmlns="http://www.w3.org/1999/html">
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<style>
+.card{
+ border-radius: 10px;
+}
+h1{
+text-align: center;
+}
+.btn btn-succes{
+    padding: 30px;
+}
+.row{
+    padding: 30px;
+}
+.card-body{
+    padding: 30px;
+}
+.wizz,li{
+    text-align: center;
+}
+</style>
+
+
+</head>
+
+</div>
+	<div class="jumbotron">
+		<h1>NEWS TODAY</h1>
+
+			{% csrf_token %}
+       <a class="btn btn-primary" href="{% url ' my-home' %}" role="button">morning news</a>
+            <a class="btn btn-primary" href="{% url 'my-Breakingnews' %}" role="button">Breaking news</a>
+            <a class="btn btn-primary" href="{% url 'my-Weeklyhighlights' %}" role="button">Weekly highlights</a>
+            <a class="btn btn-primary" href="{%url 'my-Sports'  %}" role="button">Sports</a>
+            <a class="btn btn-primary" href="{% url 'my-Newsmarket' %}" role="button">News market</a>
+            <a class="btn btn-primary" href="{% url 'my-Politics' %}" role="button">Politics</a>
+            <a class="btn btn-primary" href="{% url 'my-Internationalrelations' %}" role="button">International relations</a>
+		</form>
+	</div>
+
+</body>
+<div class="card-deck">
+  <div class="card">
+    <img class="card-img-top" src="https://macdonaldlaurier.ca/wp-content/uploads/2019/06/modi-trudeau-india.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Canada, India should change script and become real partners: Karthik Nachiappan in the Toronto Sun</h5>
+      <p class="card-text">With Canadian Foreign Minister Melanie Joly having completed her first bilateral visit to India this month, both countries need to reset the Canada-India relationship and deal jointly with global challenges</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
+        <a href="https://macdonaldlaurier.ca/canada-india-should-change-script-and-become-real-partners-karthik-nachiappan-in-the-toronto-sun/" class="btn btn-primary">Read more</a>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="https://macdonaldlaurier.ca/wp-content/uploads/2023/03/52650475999_ef267f29b6_o900-768x432.png" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Canada-Japan cooperation to counter China’s disinformation campaigns: Charles Burton for Inside Policy</h5>
+      <p class="card-text">Promulgation of disinformation is a well established, pervasive, long accepted and deeply entrenched central aspect of the Chinese Communist Party’s (CCP) domestic and international political strategy </p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
+    <a href="https://macdonaldlaurier.ca/canada-japan-cooperation-to-counter-chinas-disinformation-campaigns-charles-burton-for-inside-policy/" class="btn btn-primary">Read more</a>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="https://macdonaldlaurier.ca/wp-content/uploads/2021/11/MLI_feature_default-768x426.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">New program and director-level changes at the Macdonald-Laurier Institute</h5>
+      <p class="card-text">OTTAWA, ON (March 2, 2023): MLI is pleased to formally announce changes that will broaden the scope of MLI’s public policy outreach and expand our work as Canada’s foremost thought leader. The Institute’s consistent growth in size and influence is proof of the essential role it plays in Canada’s future </p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
+    <a href="https://macdonaldlaurier.ca/new-program-and-director-level-changes-at-the-macdonald-laurier-institute/" class="btn btn-primary">Read more</a>
+    </div>
+  </div>
+
+</div>
+<div class="card-deck">
+  <div class="card">
+    <img class="card-img-top" src="https://smallbizclub.com/wp-content/uploads/2020/06/bigstock-Group-Of-Professional-Business-349068817.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">
+Economic Inclusion Project Introduces ‘The Practical Guide for the Financial Inclusion of the Refugee and Migrant Population</h5>
+      <p class="card-text">LIMA, Peru— The USAID/World Council of Credit Unions’ (WOCCU) Economic Inclusion Project in March introduced to more than 100 representatives of Peru’s</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
+    <a href="https://www.woccu.org/newsroom/releases/Economic_Inclusion_Project_Introduces_The_Practical_Guide_for_the_Financial_Inclusion_of_the_Refugee_and_Migrant_Population" class="btn btn-primary">Read more</a>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="https://image.cnbcfm.com/api/v1/image/107203398-1678082091923-gettyimages-1247751876-The_14th_National_Peoples_Congress.jpeg?v=1678182854&w=630&h=354&ffmt=webp&vtcrop=y" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">How China’s shifting growth picture could hit global markets</h5>
+      <p class="card-text">China’s economy will be forced to recalibrate because of a “fractured” global order, and the new drivers of growth will “disappoint” global markets, according to David Roche, president of Independent Strategy </p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
+    <a href="https://www.cnbc.com/2023/03/07/how-chinas-shifting-growth-picture-could-hit-global-markets.html" class="btn btn-primary">Read more</a>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="https://image.cnbcfm.com/api/v1/image/107202107-1677747506151-gettyimages-1247184305-FRANCE_INFLATION.jpeg?v=1677751495&w=630&h=354&ffmt=webp&vtcrop=y" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Euro zone inflation softens to 8.5% in February as ECB signals interest rate hiking is not over</h5>
+      <p class="card-text">New data out of the euro zone on Thursday suggested that inflation is taking a while to come down significantly, raising prospects of further rate hikes in the region in the coming months</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
+    <a href="https://www.cnbc.com/2023/03/02/inflation-euro-zone-prices-dip-to-8point5percent-as-ecb-flags-rate-hiking-not-over.html" class="btn btn-primary">Read more</a>
+    </div>
+  </div>
+</div>
+	<script
+	src="http://code.jquery.com/jquery-3.3.1.min.js"
+	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+<!-- Footer -->
+<footer class="bg-light text-center ">
+  <!-- Grid container -->
+  <div class="container p-4">
+
+
+    <!-- Section: Form -->
+    <section class="">
+      <form action="">
+        <!--Grid row-->
+        <div class="row d-flex justify-content-center">
+          <!--Grid column-->
+          <div class="col-auto">
+            <p class="pt-2">
+              <strong>Sign up for our newsletter</strong>
+            </p>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-md-5 col-12">
+            <!-- Email input -->
+            <div class="form-outline mb-4">
+              <input type="email" id="form5Example2" class="form-control" />
+              <label class="form-label" for="form5Example2">Email address</label>
+            </div>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-auto">
+
+            <!-- Submit button -->
+            <button type="submit" class="btn btn-primary mb-4">
+              Subscribe
+            </button>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </form>
+    </section>
+    <!-- Section: Form -->
+
+
+    <!-- Section: Text -->
+    <section class="mb-4">
+      <p>
+        NewsToday is a reputable news company dedicated to providing timely and accurate news to its audience. With a team of experienced journalists, NewsToday covers a wide range of topics, from politics and business to entertainment and sports. Stay informed with NewsToday's up-to-date news coverage.
+      </p>
+
+    <!-- Section: Links -->
+    <section style="text-align: center " class="wizz">
+      <!--Grid row-->
+      <div style="text-align: center" class="row">
+        <!--Grid column-->
+        <div style="text-align: center" class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 style="text-align: center" class="text-uppercase"></h5>
+
+          <ul style="text-align: center" class="list-unstyled mb-0">
+            <li>
+              <a style="text-align: center, padding:30px"  href="#!" class="text-dark">contacts</a>
+            </li>
+            <li>
+              <a style="text-align: center, padding:30px" href="#!" class="text-dark">About</a>
+            </li>
+            <li>
+              <a style="text-align: center, padding:30px" href="#!" class="text-dark">Home</a>
+            </li>
+            <li>
+              <a style="text-align: center, padding:30px"href="#!" class="text-dark">Comments</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+    © 2023Copyright:
+    <a class="text-dark" href="https://mdbootstrap.com/">NewsToday.com</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+</html>
+

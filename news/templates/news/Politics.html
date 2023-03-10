@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<div xmlns="http://www.w3.org/1999/html">
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<style>
+.card{
+ border-radius: 10px;
+}
+h1{
+text-align: center;
+}
+.btn btn-succes{
+    padding: 30px;
+}
+.row{
+    padding: 30px;
+}
+.card-body{
+    padding: 30px;
+}
+.wizz,li{
+    text-align: center;
+}
+</style>
+
+
+</head>
+
+</div>
+	<div class="jumbotron">
+		<h1>NEWS TODAY</h1>
+
+			{% csrf_token %}
+         <a class="btn btn-primary" href="{% url ' my-home' %}" role="button">morning news</a>
+            <a class="btn btn-primary" href="{% url 'my-Breakingnews' %}" role="button">Breaking news</a>
+            <a class="btn btn-primary" href="{% url 'my-Weeklyhighlights' %}" role="button">Weekly highlights</a>
+            <a class="btn btn-primary" href="{%url 'my-Sports'  %}" role="button">Sports</a>
+            <a class="btn btn-primary" href="{% url 'my-Newsmarket' %}" role="button">News market</a>
+            <a class="btn btn-primary" href="{% url 'my-Politics' %}" role="button">Politics</a>
+            <a class="btn btn-primary" href="{% url 'my-Internationalrelations' %}" role="button">International relations</a>
+		</form>
+	</div>
+
+</body>
+<div class="card-deck">
+  <div class="card">
+    <img class="card-img-top" src="https://i.kinja-img.com/gawker-media/image/upload/c_fit,f_auto,g_center,pg_1,q_60,w_1165/c55d49f7c2d66fa2a4946af0fd395f38.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Congress Considers Banning TikTok After App Makes Every Senator Bulimic</h5>
+      <p class="card-text">WASHINGTON—Unveiling a potential bill aimed at combating what members described as a grave risk to public safety, Congress announced Tuesday that it was considering a ban on TikTok after the app made every senator bulimic. </p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Last updated 27 mins ago</small>
+        <a href="https://www.theonion.com/congress-considers-banning-tiktok-after-app-makes-every-1850198295" class="btn btn-primary">Read more</a>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="https://i.kinja-img.com/gawker-media/image/upload/c_fit,f_auto,g_center,pg_1,q_60,w_1165/c1541ba60e607283d3c84a688c732b2b.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Trump Slams Biden As America’s Most Flat-Assed President</h5>
+      <p class="card-text">PALM BEACH, FL—Calling into question whether he had the junk in the trunk necessary to lead the country, Donald Trump reportedly slammed President Joe Biden Wednesday as America’s most flat-assed president. </p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
+    <a href="https://www.theonion.com/trump-slams-biden-as-america-s-most-flat-assed-presiden-1849855416" class="btn btn-primary">Read more</a>
+    </div>
+  </div>
+   </div>
+  <div class="card">
+    <img class="card-img-top" src="https://i.kinja-img.com/gawker-media/image/upload/c_fit,f_auto,g_center,pg_1,q_60,w_1165/72efb0a7a663a280f067beed938ad991.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Democrats Vow To Make Better Effort To Reach Out To Hollywood Elite</h5>
+      <p class="card-text"> LOS ANGELES—Pledging to never again lose focus on their most important constituents, the Democratic National Committee reportedly vowed Tuesday to make a better effort to reach out to the Hollywood elite.</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
+    <a href="" class="btn btn-primary">Read more</a>
+    </div>
+  </div>
+
+ </div>
+  <div class="card">
+    <img class="card-img-top" src="https://i.kinja-img.com/gawker-media/image/upload/c_fit,f_auto,g_center,pg_1,q_60,w_1165/e14523c05c8255e743ebd52bba1d5e63.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Raphael Warnock Loses All Faith In God After Being Forced Into Runoff Against Herschel Walker</h5>
+      <p class="card-text">ATLANTA—Struggling to cope with his shock at the outcome of the midterm elections, Sen. Raphael Warnock (D-GA) reportedly lost all faith in God this week after being forced into a runoff against Herschel Walker </p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
+    <a href="https://www.theonion.com/raphael-warnock-loses-all-faith-in-god-after-being-forc-1849773615" class="btn btn-primary">Read more</a>
+    </div>
+  </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="https://i.kinja-img.com/gawker-media/image/upload/c_fit,f_auto,g_center,pg_1,q_60,w_1165/ffd6f3897f2572f910d200becd9b2cc8.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Smiling Fetterman Asks Oz If He’d Mind Slowly Repeating Concession For 5th Time</h5>
+      <p class="card-text">PITTSBURGH–Speaking to the Republican candidate over the phone early Wednesday morning, a smiling John Fetterman reportedly asked Mehmet Oz if he would mind slowly repeating his concession for the fifth time </p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
+    <a href="https://www.theonion.com/smiling-fetterman-asks-oz-if-he-d-mind-slowly-repeating-1849763117" class="btn btn-primary">Read more</a>
+    </div>
+  </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="https://i.kinja-img.com/gawker-media/image/upload/c_fit,f_auto,g_center,pg_1,q_60,w_1165/29e6ae6f72521356fbb867d34e74fdba.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Victorious Senator Vows To Still Fight For Billionaires Who Didn’t Funnel Dark Money Into Campaign</h5>
+      <p class="card-text"> MOCKSVILLE, NC—Pledging that he would work to unite rather than divide following his election victory, Senator-elect Ted Budd (R-NC) vowed Wednesday to still fight for billionaires who didn’t funnel dark money into his campaign.</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
+    <a href="https://www.theonion.com/victorious-senator-vows-to-still-fight-for-billionaires-1849762239" class="btn btn-primary">Read more</a>
+    </div>
+  </div>
+	<script
+	src="http://code.jquery.com/jquery-3.3.1.min.js"
+	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+<!-- Footer -->
+<footer class="bg-light text-center ">
+  <!-- Grid container -->
+  <div class="container p-4">
+
+
+    <!-- Section: Form -->
+    <section class="">
+      <form action="">
+        <!--Grid row-->
+        <div class="row d-flex justify-content-center">
+          <!--Grid column-->
+          <div class="col-auto">
+            <p class="pt-2">
+              <strong>Sign up for our newsletter</strong>
+            </p>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-md-5 col-12">
+            <!-- Email input -->
+            <div class="form-outline mb-4">
+              <input type="email" id="form5Example2" class="form-control" />
+              <label class="form-label" for="form5Example2">Email address</label>
+            </div>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-auto">
+
+            <!-- Submit button -->
+            <button type="submit" class="btn btn-primary mb-4">
+              Subscribe
+            </button>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </form>
+    </section>
+    <!-- Section: Form -->
+
+
+    <!-- Section: Text -->
+    <section class="mb-4">
+      <p>
+        NewsToday is a reputable news company dedicated to providing timely and accurate news to its audience. With a team of experienced journalists, NewsToday covers a wide range of topics, from politics and business to entertainment and sports. Stay informed with NewsToday's up-to-date news coverage.
+      </p>
+
+    <!-- Section: Links -->
+    <section style="text-align: center " class="wizz">
+      <!--Grid row-->
+      <div style="text-align: center" class="row">
+        <!--Grid column-->
+        <div style="text-align: center" class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 style="text-align: center" class="text-uppercase"></h5>
+
+          <ul style="text-align: center" class="list-unstyled mb-0">
+            <li>
+              <a style="text-align: center, padding:30px"  href="#!" class="text-dark">contacts</a>
+            </li>
+            <li>
+              <a style="text-align: center, padding:30px" href="#!" class="text-dark">About</a>
+            </li>
+            <li>
+              <a style="text-align: center, padding:30px" href="#!" class="text-dark">Home</a>
+            </li>
+            <li>
+              <a style="text-align: center, padding:30px"href="#!" class="text-dark">Comments</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+    © 2023Copyright:
+    <a class="text-dark" href="https://mdbootstrap.com/">NewsToday.com</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+</html>
+
